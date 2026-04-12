@@ -12,7 +12,7 @@ const CRITERIA = '金利・審査・使いやすさ・限度額・サポート';
 const A8_NAME = 'DMM FX';
 const A8_URL = 'https://px.a8.net/svt/ejp?a8mat=4AZR8U+DHKB6E+1WP2+ZQNG3';
 const A8_DESC = '初心者でも安心のFX取引';
-const MODEL = 'claude-sonnet-4-20250514';
+const MODEL = process.env.MODEL || 'claude-haiku-4-5-20251001';
 
 function moshimoAmazonLink(keyword) {
   const searchUrl = encodeURIComponent('https://www.amazon.co.jp/s?k=' + encodeURIComponent(keyword) + '&tag=' + AMAZON_TRACKING_ID);
